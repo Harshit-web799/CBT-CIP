@@ -2,49 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
-    <!-- Link to Google Fonts for custom font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to favicon -->
-    <link rel="icon" href="./favicon/javascript.png">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>To-Do list</title>
+  <link rel="stylesheet" href="/To-Do.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <h1>Todo List</h1>
-    </header>
-
-    <!-- Form for adding new to-do items -->
-    <form>
-        <!-- Input field for to-do item text -->
-        <input type="text" class="todo-input" maxlength="20">
-        <!-- Button to submit new to-do item -->
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus-square"></i> <!-- Font Awesome icon for the button -->
-        </button>
-        <!-- Dropdown for filtering to-do items -->
-        <div class="select">
-            <select name="todos" class="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
-            </select>
+    <div class="container">
+        <h1> ToDo App</h1>
+        <div class="input">
+            <input type="text" placeholder="Enter Your Task" id="inp">
+            <button onclick="Add()">Add</button>
+        
         </div>
-    </form>
+        <div class="text">
 
-    <!-- Container for the to-do list items -->
-    <div class="todo-container">
-        <ul class="todo-list"></ul> <!-- Unordered list for dynamically added to-do items -->
+        </div>
     </div>
-
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
+    <script src="/To-Do list.js"></script>
 </body>
+
 </html>
